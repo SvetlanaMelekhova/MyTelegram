@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-android-extensions'
+
 }
 
 android {
@@ -45,15 +47,10 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
-    implementation "com.mikepenz:materialdrawer:8.4.0"
+    implementation "com.mikepenz:materialdrawer:6.1.2"
 
 //required support lib modules
     implementation "androidx.recyclerview:recyclerview:1.2.0"
     implementation "androidx.annotation:annotation:1.2.0"
 
-// Add for NavController support
-    implementation "com.mikepenz:materialdrawer-nav:8.4.0"
-
-// Add for Android-Iconics support
-    implementation "com.mikepenz:materialdrawer-iconics:8.4.0"
 }
